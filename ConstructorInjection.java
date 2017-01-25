@@ -4,15 +4,9 @@ import com.baeldung.di.employee.Employee;
 import com.baeldung.di.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
-/**
- * 
- * @author shaffenbredl
- *
- */
-
 public class ConstructorInjection {
 
-	EmployeeRepository employeeRepository;
+	public final EmployeeRepository employeeRepository;
 
 	@Autowired
 	public ConstructorInjection(EmployeeRepository employeeRepository) {
